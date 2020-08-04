@@ -12,13 +12,11 @@ struct DetailInfoView: View {
     let contacts: Contact
     
     var body: some View {
-        NavigationView {
-            Form {
-                Text("Phone: \(contacts.phoneNumber)")
-                Text("Email: \(contacts.email)")
-                    .navigationBarTitle("\(contacts.fullName)")
-            }
+        Form {
+            Text("Phone: \(contacts.phoneNumber)")
+            Text("Email: \(contacts.email)")
         }
+        .navigationBarTitle("\(contacts.fullName)", displayMode: .inline)
     }
 }
 
