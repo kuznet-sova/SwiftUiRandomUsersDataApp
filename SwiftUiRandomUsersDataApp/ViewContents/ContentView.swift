@@ -9,8 +9,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    private let contacts = Contact.getContactList()
+    
     var body: some View {
-        Text("Hello, World!")
+        ContactListView(contacts: contacts)
     }
 }
 

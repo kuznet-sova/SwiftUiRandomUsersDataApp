@@ -9,13 +9,21 @@
 import SwiftUI
 
 struct DetailInfoView: View {
+    let contacts: Contact
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            Form {
+                Text("Phone: \(contacts.phoneNumber)")
+                Text("Email: \(contacts.email)")
+                    .navigationBarTitle("\(contacts.fullName)")
+            }
+        }
     }
 }
 
 struct DetailInfoView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailInfoView()
+        DetailInfoView(contacts: Contact.init(name: "Name", surname: "Surname", email: "Email", phoneNumber: "Phone"))
     }
 }
