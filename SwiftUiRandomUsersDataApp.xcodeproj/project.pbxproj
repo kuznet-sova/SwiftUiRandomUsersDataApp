@@ -56,12 +56,10 @@
 		8CE3107A24D9B7DB002B7C7D /* SwiftUiRandomUsersDataApp */ = {
 			isa = PBXGroup;
 			children = (
-				8CE3107B24D9B7DB002B7C7D /* AppDelegate.swift */,
-				8CE3107D24D9B7DB002B7C7D /* SceneDelegate.swift */,
-				8CE3107F24D9B7DB002B7C7D /* ContentView.swift */,
-				8CE3108124D9B7E1002B7C7D /* Assets.xcassets */,
-				8CE3108624D9B7E1002B7C7D /* LaunchScreen.storyboard */,
-				8CE3108924D9B7E1002B7C7D /* Info.plist */,
+				8CE3108F24D9B829002B7C7D /* ViewContents */,
+				8CE3109024D9B858002B7C7D /* Storyboards */,
+				8CE3109124D9B876002B7C7D /* Sourse */,
+				8CE3109224D9B88C002B7C7D /* SupportingFiles */,
 				8CE3108324D9B7E1002B7C7D /* Preview Content */,
 			);
 			path = SwiftUiRandomUsersDataApp;
@@ -73,6 +71,40 @@
 				8CE3108424D9B7E1002B7C7D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8CE3108F24D9B829002B7C7D /* ViewContents */ = {
+			isa = PBXGroup;
+			children = (
+				8CE3107F24D9B7DB002B7C7D /* ContentView.swift */,
+			);
+			path = ViewContents;
+			sourceTree = "<group>";
+		};
+		8CE3109024D9B858002B7C7D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8CE3108624D9B7E1002B7C7D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8CE3109124D9B876002B7C7D /* Sourse */ = {
+			isa = PBXGroup;
+			children = (
+				8CE3108124D9B7E1002B7C7D /* Assets.xcassets */,
+			);
+			path = Sourse;
+			sourceTree = "<group>";
+		};
+		8CE3109224D9B88C002B7C7D /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8CE3107B24D9B7DB002B7C7D /* AppDelegate.swift */,
+				8CE3107D24D9B7DB002B7C7D /* SceneDelegate.swift */,
+				8CE3108924D9B7E1002B7C7D /* Info.plist */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +320,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUiRandomUsersDataApp/Preview Content\"";
 				DEVELOPMENT_TEAM = G39AAW7HHA;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SwiftUiRandomUsersDataApp/Info.plist;
+				INFOPLIST_FILE = SwiftUiRandomUsersDataApp/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +340,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUiRandomUsersDataApp/Preview Content\"";
 				DEVELOPMENT_TEAM = G39AAW7HHA;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SwiftUiRandomUsersDataApp/Info.plist;
+				INFOPLIST_FILE = SwiftUiRandomUsersDataApp/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
