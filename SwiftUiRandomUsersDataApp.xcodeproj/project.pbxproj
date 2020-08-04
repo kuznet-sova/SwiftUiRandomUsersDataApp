@@ -13,6 +13,11 @@
 		8CE3108224D9B7E1002B7C7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CE3108124D9B7E1002B7C7D /* Assets.xcassets */; };
 		8CE3108524D9B7E1002B7C7D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CE3108424D9B7E1002B7C7D /* Preview Assets.xcassets */; };
 		8CE3108824D9B7E1002B7C7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CE3108624D9B7E1002B7C7D /* LaunchScreen.storyboard */; };
+		8CE3109524D9B9CD002B7C7D /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE3109424D9B9CD002B7C7D /* DataManager.swift */; };
+		8CE3109724D9BAF4002B7C7D /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE3109624D9BAF3002B7C7D /* Contact.swift */; };
+		8CE3109924D9CB7B002B7C7D /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE3109824D9CB7B002B7C7D /* ContactListView.swift */; };
+		8CE3109B24D9CBB8002B7C7D /* DetailContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE3109A24D9CBB8002B7C7D /* DetailContactListView.swift */; };
+		8CE3109D24D9CBE7002B7C7D /* DetailInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE3109C24D9CBE7002B7C7D /* DetailInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		8CE3108424D9B7E1002B7C7D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8CE3108724D9B7E1002B7C7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CE3108924D9B7E1002B7C7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CE3109424D9B9CD002B7C7D /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		8CE3109624D9BAF3002B7C7D /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		8CE3109824D9CB7B002B7C7D /* ContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
+		8CE3109A24D9CBB8002B7C7D /* DetailContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContactListView.swift; sourceTree = "<group>"; };
+		8CE3109C24D9CBE7002B7C7D /* DetailInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				8CE3108F24D9B829002B7C7D /* ViewContents */,
+				8CE3109324D9B97B002B7C7D /* Models */,
 				8CE3109024D9B858002B7C7D /* Storyboards */,
 				8CE3109124D9B876002B7C7D /* Sourse */,
 				8CE3109224D9B88C002B7C7D /* SupportingFiles */,
@@ -77,6 +88,9 @@
 			isa = PBXGroup;
 			children = (
 				8CE3107F24D9B7DB002B7C7D /* ContentView.swift */,
+				8CE3109824D9CB7B002B7C7D /* ContactListView.swift */,
+				8CE3109A24D9CBB8002B7C7D /* DetailContactListView.swift */,
+				8CE3109C24D9CBE7002B7C7D /* DetailInfoView.swift */,
 			);
 			path = ViewContents;
 			sourceTree = "<group>";
@@ -105,6 +119,15 @@
 				8CE3108924D9B7E1002B7C7D /* Info.plist */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		8CE3109324D9B97B002B7C7D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8CE3109424D9B9CD002B7C7D /* DataManager.swift */,
+				8CE3109624D9BAF3002B7C7D /* Contact.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,9 +201,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CE3109724D9BAF4002B7C7D /* Contact.swift in Sources */,
+				8CE3109D24D9CBE7002B7C7D /* DetailInfoView.swift in Sources */,
 				8CE3107C24D9B7DB002B7C7D /* AppDelegate.swift in Sources */,
+				8CE3109524D9B9CD002B7C7D /* DataManager.swift in Sources */,
+				8CE3109B24D9CBB8002B7C7D /* DetailContactListView.swift in Sources */,
 				8CE3107E24D9B7DB002B7C7D /* SceneDelegate.swift in Sources */,
 				8CE3108024D9B7DB002B7C7D /* ContentView.swift in Sources */,
+				8CE3109924D9CB7B002B7C7D /* ContactListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
