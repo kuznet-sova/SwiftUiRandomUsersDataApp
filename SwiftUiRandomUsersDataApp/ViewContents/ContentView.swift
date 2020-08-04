@@ -12,7 +12,17 @@ struct ContentView: View {
     private let contacts = Contact.getContactList()
     
     var body: some View {
-        ContactListView(contacts: contacts)
+        TabView {
+            ContactListView(contacts: contacts)
+                .tabItem {
+                    Image(systemName: "person.crop.circle")
+            }
+            
+            DetailContactListView(contacts: contacts)
+                .tabItem {
+                    Image(systemName: "rectangle.stack.person.crop")
+            }
+        }
     }
 }
 
