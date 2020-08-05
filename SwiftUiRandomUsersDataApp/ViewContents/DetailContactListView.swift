@@ -15,17 +15,17 @@ struct DetailContactListView: View {
         NavigationView {
             List{
                 ForEach(contacts, id: \.name) { contact in
-                    Section(header: Text("\(contact.fullName)")) {
+                    Section(header: Text(contact.fullName)) {
                         HStack {
                             Image(systemName: "phone")
                                 .foregroundColor(.blue)
-                            Text("\(contact.phoneNumber)")
+                            Text(contact.phoneNumber)
                         }
                         
                         HStack {
                             Image(systemName: "tray")
                                 .foregroundColor(.blue)
-                            Text("\(contact.email)")
+                            Text(contact.email)
                         }
                     }
                 }
@@ -37,6 +37,6 @@ struct DetailContactListView: View {
 
 struct DetailContactListView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailContactListView(contacts: [Contact.init(name: "Name", surname: "Surname", email: "Email", phoneNumber: "Phone")])
+        DetailContactListView(contacts: Contact.getContactList())
     }
 }

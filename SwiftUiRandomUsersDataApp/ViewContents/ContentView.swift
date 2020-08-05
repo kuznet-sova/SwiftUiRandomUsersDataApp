@@ -16,11 +16,13 @@ struct ContentView: View {
             ContactListView(contacts: contacts)
                 .tabItem {
                     Image(systemName: "person.crop.circle")
+                    Text("Contact list")
             }
             
             DetailContactListView(contacts: contacts)
                 .tabItem {
                     Image(systemName: "rectangle.stack.person.crop")
+                    Text("Detail contact list")
             }
         }
     }

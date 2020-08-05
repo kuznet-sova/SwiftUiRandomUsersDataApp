@@ -15,16 +15,16 @@ struct ContactListView: View {
         NavigationView {
             List(contacts, id: \.name) { contact in
                 NavigationLink(destination: DetailInfoView(contacts: contact)) {
-                    Text("\(contact.fullName)")
-                        .navigationBarTitle("Contact list")
+                    Text(contact.fullName)
                 }
             }
+            .navigationBarTitle("Contact list")
         }
     }
 }
 
 struct PersonListView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactListView(contacts: [Contact.init(name: "Name", surname: "Surname", email: "Email", phoneNumber: "Phone")])
+        ContactListView(contacts: Contact.getContactList())
     }
 }

@@ -22,6 +22,6 @@ struct DetailInfoView: View {
 
 struct DetailInfoView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailInfoView(contacts: Contact.init(name: "Name", surname: "Surname", email: "Email", phoneNumber: "Phone"))
+        DetailInfoView(contacts: Contact.getContactList().first!)
     }
 }
